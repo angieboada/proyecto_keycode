@@ -407,6 +407,308 @@
       </div>
     </section>
 
+    <!-- SECCIÓN EJERCICIOS DE PRÁCTICA -->
+    <section class="ejercicios-y-desafios py-4">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold text-center pb-4">
+          Ejercicios y desafíos
+        </h2>
+        <p class="text-center fs-3 text-body-secondary">
+          ¡Utiliza estos desafíos para mejorar con Flexbox y Grid!
+        </p>
+        <h3 class="display-5 text-center mt-5">Flexbox</h3>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Principiante</small><br />
+              Crea un contenedor con 3 cajas dentro que se distribuyan
+              horizontalmente y tengan el mismo espacio entre ellas.
+            </h4>
+            <div class="accordion" id="accordionFL1">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-1"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-1"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL1"
+              >
+                <div class="accordion-body">
+                  <code>justify-content: space-between;</code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea una barra de navegación con 5 links. El primer y último link
+              deben estar en los extremos opuestos de la barra.
+            </h4>
+            <div class="accordion" id="accordionFL2">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-2"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-2"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <code>justify-content: space-between;</code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea una galería de imágenes donde las imágenes se distribuyan en
+              2 líneas y estén centradas.
+            </h4>
+            <div class="accordion" id="accordionFL3">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-3"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-3"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >flex-wrap: wrap; <br />
+                    justify-content: center;</code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Avanzado</small><br />
+              Crea un diseño de tarjeta con imagen, título, texto y botón. La
+              imagen debe estar a la izquierda y el resto del contenido a la
+              derecha, alineado verticalmente.
+            </h4>
+            <div class="accordion" id="accordionFL4">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-4"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-4"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Utiliza <code>flex-direction: row;</code> y
+                    <code>align-items: center;</code> para el contenido.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <h3 class="display-5 text-center mt-5">Grid</h3>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Principiante</small><br />
+              Diseña una simple grilla de 3x3 cajas del mismo tamaño.
+            </h4>
+            <div class="accordion" id="accordionGr1">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-1"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-1"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-columns: repeat(3, 1fr);
+                    <br />grid-template-rows: repeat(3, 1fr);</code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea un layout de artículo con imagen a la izquierda, título y descripción a la derecha, y contenido debajo abarcando ambas columnas.
+            </h4>
+            <div class="accordion" id="accordionGr2">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-2"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-2"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-areas: 'img title' 'img desc' 'content content';
+                  </code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Diseña un encabezado de sitio web con un logo a la izquierda, navegación en el centro y un botón a la derecha.
+            </h4>
+            <div class="accordion" id="accordionGr3">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-3"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-3"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr3"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-areas: 'logo nav btn';
+                  </code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Avanzado</small><br />
+              Diseña una grilla responsiva que muestra 4 columnas en pantallas grandes, 2 en medianas y 1 en pequeñas.            </h4>
+            <div class="accordion" id="accordionGr4">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-4"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-4"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr4"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                  </code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
     <!-- SECCION PIE DE PÁGINA -->
     <footer class="pie-de-pagina text-center text-md-right bg-dark text-white">
       <div class="container">
