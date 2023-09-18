@@ -1,0 +1,74 @@
+Copy code
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Fundamentales de Grid</title>
+    <style>
+        /* Estilos CSS para dar formato a la información */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+            grid-template-areas: 
+                "header header header"
+                "main sidebar sidebar";
+        }
+        .item {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .header {
+            grid-area: header;
+            background-color: #f0f0f0;
+        }
+        .main {
+            grid-area: main;
+            background-color: #ffffff;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conceptos Fundamentales de Grid</h1>
+    <p>Grid es un sistema de diseño bidimensional que permite crear diseños de cuadrícula complejos y alineaciones precisas de elementos en una página web. Aquí se describen algunos conceptos clave:</p>
+
+    <h2>Contenedor de Cuadrícula</h2>
+    <p>El contenedor de cuadrícula es un elemento HTML que se convierte en un contenedor de cuadrícula utilizando la propiedad CSS `display: grid`. Dentro de este contenedor, puedes colocar elementos que se organizarán en una cuadrícula.</p>
+
+    <h2>Filas y Columnas</h2>
+    <p>En una cuadrícula, puedes definir el número de filas y columnas utilizando las propiedades `grid-template-rows` y `grid-template-columns`. Por ejemplo, `grid-template-rows: repeat(2, 100px)` crea dos filas de 100px de altura cada una.</p>
+
+    <h2>Posicionamiento de Elementos</h2>
+    <p>Los elementos dentro de la cuadrícula se posicionan utilizando propiedades como `grid-row` y `grid-column`. Puedes especificar en qué fila y columna debe aparecer cada elemento.</p>
+
+    <h2>Template Areas</h2>
+    <p>La propiedad `grid-template-areas` te permite definir un esquema visual de tu cuadrícula utilizando nombres de áreas. Esto facilita la organización de elementos en la cuadrícula según el diseño deseado.</p>
+
+    <div class="grid-container">
+        <div class="item header">Cabecera</div>
+        <div class="item main">Contenido Principal</div>
+        <div class="item sidebar">Barra Lateral</div>
+    </div>
+
+    <script>
+        // Puedes agregar código JavaScript adicional aquí si es necesario
+    </script>
+</body>
+</html>
