@@ -15,14 +15,14 @@
 
     <!-- ARCHIVOS CSS PERSONALIZADOS-->
     <link type="text/css" rel="stylesheet" href="css/estilos.css">
-    <title>Angie Boada</title>
+    <title>Flexbox y Grid</title>
   </head>
   <body>
     <!-- SECCION NAVEGACIÓN -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
         <div class="container">
               <a href="#" class="navbar-brand" >
-                <strong>Angie</strong>Boada
+                <strong>Flexbox y </strong>Grid
               </a>
 
               <button type="button" class="navbar-toggler" data-toggle="collapse"
@@ -34,7 +34,7 @@
               <div class="collapse navbar-collapse" id="menu-principal">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">¿Quien Soy?</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">¿Que es Flexbox y Grid?</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
                 </ul>
              </div>
@@ -51,22 +51,21 @@
             </div>
             
             <div class="col-12 col-md-6 text-center text-md-left align-self-md-center">
-                <h1 class="display-4 font-weight-bold text-primary">¿Quién soy?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere, minus assumenda sapiente doloremque delectus
-                nisi, at suscipit, ex magni eligendi consequatur. Ex qui vitae maxime architecto nulla tempora iste.</p>
+                <h1 class="display-4 font-weight-bold text-primary">¿Que es Flexbox y Grid?</h1>
+                <p>Flexbox y Grid son dos técnicas de diseño web importantes que han revolucionado la forma en que creamos diseños web flexibles y responsivos.</p>
 
                 <div class="row">
                     <div class="col">
                       <div class="collapse multi-collapse" id="multiCollapseExample1">
                         <div class="card card-body">
-                          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            Flexbox se introdujo en 2009 y Grid en 2011 como propuestas de diseño CSS3. Ambas tecnologías han sido ampliamente adoptadas por la industria del desarrollo web debido a su capacidad para simplificar la creación de diseños complejos y mejorar la capacidad de respuesta de los sitios web.
                         </div>
                       </div>
                     </div>
                   </div>
                   
                 <p>
-                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Leer más</a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Historia</a>
                     
                   </p>
             </div>
@@ -88,6 +87,59 @@
                     <p class="h4 font-italic">-Andres Castellanos</p>
             </div>
         </div>
+    </div>
+</section>
+
+
+
+<!-- SECCION Conceptos Fundamentales de Grid -->
+<section class="proyectos py-4">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-center pb-4">Conceptos Fundamentales de Grid</h1>
+        <h4>Grid es un sistema de diseño bidimensional que permite crear diseños de cuadrícula complejos y alineaciones precisas de elementos en una página web.</h4>
+        <div class="row text-md-center">
+            <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto1.png" alt="Proyecto 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Contenedor de Cuadrícula</h5>
+                      <p class="card-text">El contenedor de cuadrícula es un elemento HTML que se convierte en un contenedor de cuadrícula utilizando la propiedad CSS `display: grid`. Dentro de este contenedor, puedes colocar elementos que se organizarán en una cuadrícula.</p>
+                      <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                  </div>
+            </article>
+            <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto2.png" alt="Proyecto 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Filas y Columnas</h5>
+                      <p class="card-text">En una cuadrícula, puedes definir el número de filas y columnas utilizando las propiedades `grid-template-rows` y `grid-template-columns`. Por ejemplo, `grid-template-rows: repeat(2, 100px)` crea dos filas de 100px de altura cada una.</p>
+                      <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                  </div>
+            </article>
+            <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto3.png" alt="Proyecto 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Posicionamiento de Elementos</h5>
+                      <p class="card-text">Los elementos dentro de la cuadrícula se posicionan utilizando propiedades como `grid-row` y `grid-column`. Puedes especificar en qué fila y columna debe aparecer cada elemento.</p>
+                      <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                  </div>
+            </article>
+            <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto4.png" alt="Proyecto 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Template Areas</h5>
+                      <p class="card-text">La propiedad `grid-template-areas` te permite definir un esquema visual de tu cuadrícula utilizando nombres de áreas. Esto facilita la organización de elementos en la cuadrícula según el diseño deseado.</p>
+                      <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                       <div class="grid-container">
+                  </div>
+            </article>
+        </div>    
     </div>
 </section>
 
