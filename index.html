@@ -637,42 +637,45 @@
                 navegación simple con elementos de menú alineados
                 horizontalmente.
               </p>
-                  <textarea class="area">
-        <!DOCTYPE html>
-          <html lang="es">
-          <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejemplo de Flexbox</title>
-        <style>
-        .contenedor {
-            display: flex;
-            justify-content: center;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-        .menu {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-        }
-        .item {
-            margin: 0 10px;
-        }
-    </style>
-        </head>
-          <body>
-    <div class="contenedor">
-        <ul class="menu">
-            <li class="item">Inicio</li>
-            <li class="item">Acerca de</li>
-            <li class="item">Servicios</li>
-            <li class="item">Contacto</li>
-        </ul>
-    </div>
-      </body>
-      </html>
-                  </textarea>
+                  
+                    <textarea class="area">
+  &lt!DOCTYPE html>
+  &lthtml lang="es">
+  &lthead>
+  &ltmeta charset="UTF-8">
+  &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+  &lttitle>Ejemplo de Flexbox&lt/title>
+  &ltstyle>
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    .menu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+    .item {
+        margin: 0 10px;
+    }
+&lt/style>
+&lt/head>
+&ltbody>
+&ltdiv class="contenedor">
+  &ltul class="menu">
+      &ltli class="item">Inicio&lt/li>
+      &ltli class="item">Acerca de&lt/li>
+      &ltli class="item">Servicios&lt/li>
+      &ltli class="item">Contacto&lt/li>
+  &lt/ul>
+&lt/div>
+&lt/body>
+&lt/html>
+                </textarea>
+                    <iframe src="./ejemplo1.html"></iframe>
+                  
                   <p>En este ejemplo, hemos creado una barra de navegación horizontal utilizando Flexbox. La propiedad display: flex en el contenedor principal (contenedor) establece un contenedor flexible. La propiedad justify-content: center alinea los elementos en el centro horizontal del contenedor.</p>
             </div>
             <div class="col">
@@ -680,66 +683,70 @@
               <p>En este ejemplo, utilizaremos Grid para crear un diseño de página con varias secciones.</p>
               <br>
               <textarea class="area">
-      <!DOCTYPE html>
-      <html lang="es">
-        <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Grid</title>
-    <style>
-        .contenedor {
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "cabecera cabecera cabecera"
-                                 "izquierda contenido derecha";
-            gap: 20px;
-        }
-        .cabecera {
-            grid-area: cabecera;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .izquierda {
-            grid-area: izquierda;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-        .contenido {
-            grid-area: contenido;
-            background-color: #fff;
-            padding: 20px;
-        }
-        .derecha {
-            grid-area: derecha;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-    </style>
-    </head>
-  <body>
-    <div class="contenedor">
-        <header class="cabecera">
-            <h1>Encabezado</h1>
-        </header>
-        <aside class="izquierda">
-            <h2>Barra lateral izquierda</h2>
-            <p>Contenido de la barra lateral.</p>
-        </aside>
-        <main class="contenido">
-            <h2>Contenido principal</h2>
-            <p>Contenido principal de la página.</p>
-        </main>
-        <aside class="derecha">
-            <h2>Barra lateral derecha</h2>
-            <p>Contenido de la barra lateral.</p>
-        </aside>
-    </div>
-</body>
-</html>
+&lt!DOCTYPE html>
+&lthtml lang="es">
+&lthead>
+&ltmeta charset="UTF-8">
+&ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+&lttitle>Ejemplo de Grid&lt/title>
+&ltstyle>
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "cabecera cabecera cabecera"
+                              "izquierda contenido derecha";
+        gap: 20px;
+    }
+    .cabecera {
+        grid-area: cabecera;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .izquierda {
+        grid-area: izquierda;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    .contenido {
+        grid-area: contenido;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .derecha {
+        grid-area: derecha;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+&lt/style>
+&lt/head>
+&ltbody>
+  &ltdiv class="contenedor">
+      &ltheader class="cabecera">
+          &lth1>Encabezado&lt/h1>
+      &lt/header>
+      &ltaside class="izquierda">
+          &lth2>Barra lateral izquierda&lt/h2>
+          &ltp>Contenido de la barra lateral.&lt/p>
+      &lt/aside>
+      &ltmain class="contenido">
+          &lth2>Contenido principal&lt/h2>
+          &ltp>Contenido principal de la página.&lt/p>
+      &lt/main>
+      &ltaside class="derecha">
+          &lth2>Barra lateral derecha&lt/h2>
+          &ltp>Contenido de la barra lateral.&lt/p>
+      &lt/aside>
+  &lt/div>
+&lt/body>
+&lt/html>
+                    
+                    
+      
               </textarea>
+              <iframe src="./ejemplo2.html"></iframe>
               <p>En este ejemplo, hemos creado un diseño de página utilizando Grid. El contenedor principal (contenedor) se divide en tres columnas y dos filas, y se utiliza grid-template-areas para especificar cómo se distribuyen las áreas en el diseño.</p>
             </div>
 
