@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -9,13 +10,6 @@
     />
     <link rel="shortcut icon" type="image/x-icon" href="img/faviconA.ico" />
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,6 +27,7 @@
 
     <!-- ARCHIVOS CSS PERSONALIZADOS-->
     <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+
     <title>Proyecto KeyCode</title>
   </head>
   <body>
@@ -101,6 +96,7 @@
               como objetivo facilitar la maquetación de elementos en una página
               web, tienen diferencias clave en términos de su estructura y cómo
               se utilizan.
+
             </p>
 
             <div class="row">
@@ -183,6 +179,7 @@
               <a
                 class="btn btn-primary"
                 data-toggle="collapse"
+
                 href="#multiCollapseExample2"
                 role="button"
                 aria-expanded="false"
@@ -512,8 +509,549 @@
       <p class="h4 font-italic text-center">-Andres Rojas A.</p>
     </section>
 
-    
 
+    <!-- SECCION CONSEJOS Y TRUCOS -->
+    <section class="consejos-y-trucos py-4">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold text-center pb-4">
+          Consejos y trucos
+        </h2>
+        <h3 class="display-5 text-center">Flexbox</h3>
+        <div class="row">
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Centrado fácil</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Centrar elementos vertical y horizontalmente es muy fácil con
+                  Flexbox: <code>justify-content: center</code> y
+                  <code>align-items: center</code>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <code> flex-wrap</code> para Multilínea
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Si quieres que los ítems pasen a la siguiente línea en vez de
+                  encogerse, usa <code>flex-wrap: wrap</code>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Ordenar ítems</h4>
+                <p class="card-text bg-white text-black p-2">
+                  La propiedad <code>order</code> es muy útil para cambiar el
+                  orden visual de los ítems sin cambiar el HTML.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">No Olvides el Eje Cruzado</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Es fácil enfocarse solo en el eje principal (horizontal en
+                  <code>row</code>, vertical en <code>column</code>), pero las
+                  propiedades que afectan el eje cruzado (como
+                  <code>align-items</code>) son igual de valiosas.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Uso de <code>flex: shorthand</code></h4>
+                <p class="card-text bg-white text-black p-2">
+                  En lugar de definir <code>flex-grow</code>,
+                  <code>flex-shrink</code>, y <code>flex-basis</code> por
+                  separado, utiliza la notación resumida para ahorrar tiempo y
+                  espacio.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Uso Estratégico de <code>flex-grow</code>,
+                  <code>flex-shrink</code>, y <code>flex-basis</code>
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Entender estas propiedades a fondo te permite controlar cómo
+                  tus ítems se adaptan a diferentes tamaños de contenedor. Por
+                  ejemplo, usar <code>flex-grow: 1</code> en todos los ítems les
+                  permite crecer uniformemente para llenar el espacio.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <h3 class="display-5 text-center mt-5">CSS Grid</h3>
+        <div class="row">
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Diseño con <code>grid-template-areas</code>
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Para diseños más complejos, define áreas en tu grid. Esto te
+                  permite visualizar fácilmente la estructura de tu diseño y
+                  mover áreas completas redefiniendo
+                  <code>grid-template-areas</code>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Espaciado con <code>gap</code></h4>
+                <p class="card-text bg-white text-black p-2">
+                  En lugar de utilizar márgenes, utiliza
+                  <code>gap</code> (anteriormente <code>grid-gap</code>) para
+                  espaciar uniformemente tus ítems en el grid.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Función <code>repeat()</code></h4>
+                <p class="card-text bg-white text-black p-2">
+                  Usa <code>repeat()</code> para definir múltiples columnas o
+                  filas del mismo tamaño. Ejemplo:<br /><code
+                    >grid-template-columns: repeat(3, 1fr)</code
+                  >.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Utiliza <code>fr</code> para distribución uniforme
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  La unidad <code>fr</code> es excelente para crear diseños que
+                  distribuyan espacio uniformemente entre ítems.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Grids anidados</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Anida un grid dentro de otro para lograr diseños más
+                  complejos. Por ejemplo, un ítem de grid puede convertirse en
+                  un contenedor de grid por sí mismo.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Uso de Líneas Nombradas</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Nombrar líneas en tu grid puede hacer que tu CSS sea más
+                  legible y te permite reposicionar ítems con facilidad.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Función <code>minmax()</code> para responsividad
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Esta función es esencial para crear diseños adaptativos,
+                  permitiendo que las columnas y filas tengan dimensiones
+                  mínimas y máximas.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN EJERCICIOS DE PRÁCTICA -->
+    <section class="ejercicios-y-desafios py-4">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold text-center pb-4">
+          Ejercicios y desafíos
+        </h2>
+        <p class="text-center fs-3 text-body-secondary">
+          ¡Utiliza estos desafíos para mejorar con Flexbox y Grid!
+        </p>
+        <h3 class="display-5 text-center mt-5">Flexbox</h3>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Principiante</small><br />
+              Crea un contenedor con 3 cajas dentro que se distribuyan
+              horizontalmente y tengan el mismo espacio entre ellas.
+            </h4>
+            <div class="accordion" id="accordionFL1">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-1"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-1"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL1"
+              >
+                <div class="accordion-body">
+                  <code>justify-content: space-between;</code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea una barra de navegación con 5 links. El primer y último link
+              deben estar en los extremos opuestos de la barra.
+            </h4>
+            <div class="accordion" id="accordionFL2">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-2"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-2"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <code>justify-content: space-between;</code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea una galería de imágenes donde las imágenes se distribuyan en
+              2 líneas y estén centradas.
+            </h4>
+            <div class="accordion" id="accordionFL3">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-3"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-3"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >flex-wrap: wrap; <br />
+                    justify-content: center;</code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Avanzado</small><br />
+              Crea un diseño de tarjeta con imagen, título, texto y botón. La
+              imagen debe estar a la izquierda y el resto del contenido a la
+              derecha, alineado verticalmente.
+            </h4>
+            <div class="accordion" id="accordionFL4">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-4"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-4"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Utiliza <code>flex-direction: row;</code> y
+                    <code>align-items: center;</code> para el contenido.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <h3 class="display-5 text-center mt-5">Grid</h3>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Principiante</small><br />
+              Diseña una simple grilla de 3x3 cajas del mismo tamaño.
+            </h4>
+            <div class="accordion" id="accordionGr1">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-1"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-1"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-columns: repeat(3, 1fr);
+                    <br />grid-template-rows: repeat(3, 1fr);</code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea un layout de artículo con imagen a la izquierda, título y descripción a la derecha, y contenido debajo abarcando ambas columnas.
+            </h4>
+            <div class="accordion" id="accordionGr2">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-2"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-2"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-areas: 'img title' 'img desc' 'content content';
+                  </code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Diseña un encabezado de sitio web con un logo a la izquierda, navegación en el centro y un botón a la derecha.
+            </h4>
+            <div class="accordion" id="accordionGr3">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-3"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-3"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr3"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-areas: 'logo nav btn';
+                  </code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Avanzado</small><br />
+              Diseña una grilla responsiva que muestra 4 columnas en pantallas grandes, 2 en medianas y 1 en pequeñas.            </h4>
+            <div class="accordion" id="accordionGr4">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-4"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-4"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr4"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                  </code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
+
+<!-- Puntos 7 y 10 -->
+
+<br>
+<div class="container">
+  <table class="table">
+    <thead class="table-dark">
+      <tr class="text-center">
+        <th class="border border-dark">Flexbox</th>
+        <th class="border border-dark">Grid</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr>
+        <td class="border border-dark">Buen nivel de compatibilidad en navegadores modernos, incluyendo Chrome, Firefox, Safari, Edge y Opera.</td>
+        <td class="border border-dark">Grid Layout también tiene un buen nivel de compatibilidad en navegadores modernos, incluyendo Chrome, Firefox, Safari, Edge y Opera.</td>
+      </tr>
+      <tr>
+        <td class="border border-dark">Versiones antiguas de navegadores ofrecen un buen soporte, por lo que Flexbox se puede utilizar de manera confiable en versiones más antiguasde los navegadores mencionados.</td>
+        <td class="border border-dark">CSS Grid es relativamente nuevo en comparación con Flexbox, pero su adopcion ha sido rápida, por lo que la mayoria de las versiones actualesde estos navegadores ofrecen un buen soporte. </td>
+      </tr>
+      <tr>
+        <td class="border border-dark">Uso de prefijos de proveedores, en navegadores más antiguos, es posible que debas utilizar propiedades con prefijos de proveedores, como -webkit- para Chrome y Safari o -moz- para Firefox.</td>
+        <td class="border border-dark">La compatibilidad de Grid en navegadoes antiguos , como Intenet Explorer 11 y versiones anteriores, puede ser limitada y aumentar el tiempo de desarrollo y el mantenimiento del sitio web.</td>
+      </tr>
+      <tr>
+        <td class="border border-dark">Podemos usar polyfills como "Flexibility o "Flexie" para agregar soporte en navegadores antiguos</td>
+        <td class="border border-dark">Para CSS grid, puede ser "Grid Polyfill" es una opción que agrega soporte en navegores que no lo tienen.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<div class="container mb-4 col-6">
+  <h3 style="color: rgb(148, 73, 247);" class="text-center">Ejemplos de paginas web que usan Flexbox y Grid </h3>
+  <div class="list-group text-center"> 
+    <a style="background: rgb(80, 86, 255);" target="_blank" href="https://www.awwwards.com/" class="list-group-item list-group-item-action">Ejemplo 1 </a>
+    <a target="_blank" href="https://www.smashingmagazine.com/" class="list-group-item list-group-item-action">Ejemplo 2</a>
+    <a target="_blank" href="https://css-tricks.com/" class="list-group-item list-group-item-action">Ejemplo 3</a>
+    <a target="_blank" href="https://gridbyexample.com/" class="list-group-item list-group-item-action">Ejemplo 4</a>
+    <a target="_blank" href="https://www.bbc.com/sport" class="list-group-item list-group-item-action">Ejemplo 5</a>
+    <a target="_blank" href="https://www.shopify.com/co" class="list-group-item list-group-item-action">Ejemplo 6</a>
+  </div>
+</div>
+    
     <!-- SECCION PIE DE PÁGINA -->
     <footer class="pie-de-pagina text-center text-md-right bg-dark text-white">
       <div class="container">
@@ -530,16 +1068,6 @@
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -549,6 +1077,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+
       crossorigin="anonymous"
     ></script>
   </body>
