@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
   <head>
     <!-- Required meta tags -->
@@ -10,9 +11,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/faviconA.ico" />
     <!-- Bootstrap CSS -->
     <link
+
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+
       crossorigin="anonymous"
     />
 
@@ -26,10 +29,61 @@
 
     <!-- ARCHIVOS CSS PERSONALIZADOS-->
     <link type="text/css" rel="stylesheet" href="css/estilos.css" />
-    <title>Angie Boada</title>
+
+    <title>Proyecto KeyCode</title>
   </head>
   <body>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Proyecto KeyCode</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse flex-row-reverse"
+        id="navbarNavDropdown"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
     <!-- SECCION 2 -->
     <section class="filosofia py-4 bg-primary text-center text-white">
       <div class="container">
@@ -125,12 +179,425 @@
                       elementos flexibles dentro del contenedor.
                     </p>
                   </div>
+                  
+                  
+    <!-- Sección punto 4 -->
+    <section class="quien-soy py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 text-md-left align-self-md-center">
+            <h1 class="display-4 font-weight-bold text-primary">
+              ¿Que es Flexbox y Grid?
+            </h1>
+            <p>
+              Flexbox y Grid son dos modelos de diseño en CSS que permiten crear
+              diseños de páginas web complejos y flexibles. Aunque ambos tienen
+              como objetivo facilitar la maquetación de elementos en una página
+              web, tienen diferencias clave en términos de su estructura y cómo
+              se utilizan.
+            </p>
+
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">
+                    <ul class="list-unstyled">
+                      <li>
+                        <strong>1. Estructura:</strong>
+                        <ul>
+                          <li>
+                            <strong>Flexbox:</strong> Se centra en la
+                            distribución de elementos en una sola dirección, ya
+                            sea en filas (horizontal) o columnas (vertical). Es
+                            ideal para diseñar diseños flexibles y escalables en
+                            una sola dimensión.
+                          </li>
+                          <li>
+                            <strong>Grid:</strong> Permite crear diseños
+                            bidimensionales con filas y columnas, permitiendo un
+                            control más preciso sobre la posición y el tamaño de
+                            los elementos en la página
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>2. Dirección de diseño:</strong>
+                        <ul>
+                          <li>
+                            <strong>Flexbox:</strong> Ideal para diseños
+                            unidimensionales, donde los elementos se alinean en
+                            una fila o columna y se ajustan según sea necesario.
+                          </li>
+                          <li>
+                            <strong>Grid:</strong> Excelente para diseños
+                            bidimensionales, donde se pueden definir filas y
+                            columnas específicas para colocar elementos en una
+                            cuadrícula.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>3. Control sobre los elementos:</strong>
+                        <ul>
+                          <li>
+                            <strong>Flexbox:</strong> Proporciona un control más
+                            simple y rápido sobre la alineación, distribución y
+                            reordenamiento de elementos en una fila o columna.
+                          </li>
+                          <li>
+                            <strong>Grid:</strong> Ofrece un control preciso y
+                            completo sobre la posición y el tamaño de los
+                            elementos en ambas direcciones (filas y columnas).
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <strong>4. Escenarios de uso:</strong>
+                        <ul>
+                          <li>
+                            <strong>Flexbox:</strong> Es ideal para elementos
+                            secundarios de un contenedor que necesitan ser
+                            distribuidos y alineados en una sola dirección, como
+                            barras de navegación, listas de elementos o
+                            formularios.
+                          </li>
+                          <li>
+                            <strong>Grid:</strong> Se utiliza cuando se necesita
+                            un diseño más complejo y estructurado para todo el
+                            diseño de la página, como la maquetación de páginas
+                            completas, secciones complejas y módulos de diseño.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              <a
+                class="btn btn-primary"
+                data-toggle="collapse"
+                href="#multiCollapseExample2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample1"
+                >Diferencias clave entre Flexbox y Grid:</a
+              >
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 text-center">
+            <img
+              src="img/Imagen 1.png"
+              alt="soy el desarrollador"
+              class="img-fluid mb-4 mb-md-0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplos punto 4 -->
+
+    <section class="filosofia py-4 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <!-- acordeon 1-->
+          <div
+            class="accordion col-12 col-md-6 text-md-left align-self-md-center"
+            id="accordion1"
+          >
+            <h2 class="text-center">Usos Flexbox</h2>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne1"
+                  aria-expanded="false"
+                  aria-controls="collapseOne1"
+                >
+                  Barra de navegación:
+                </button>
+              </h2>
+              <div
+                id="collapseOne1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.nav-container { display: flex; justify-content:
+                    space-around; }
+                  </code>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo2"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo2"
+                >
+                  Lista de elementos:
+                </button>
+              </h2>
+              <div
+                id="collapseTwo2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.list-container { display: flex; flex-direction: column; }
+                  </code>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree3"
+                  aria-expanded="false"
+                  aria-controls="collapseThree3"
+                >
+                  Formulario:
+                </button>
+              </h2>
+              <div
+                id="collapseThree3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.form-container { display: flex; flex-direction: column; }
+                  </code>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour4"
+                  aria-expanded="false"
+                  aria-controls="collapseFour4"
+                >
+                  Galería de imágenes:
+                </button>
+              </h2>
+              <div
+                id="collapseFour4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.gallery-container { display: flex; flex-wrap: wrap; }
+                  </code>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive5"
+                  aria-expanded="false"
+                  aria-controls="collapseFive5"
+                >
+                  Presentación de contenido en una sola fila:
+                </button>
+              </h2>
+              <div
+                id="collapseFive5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.content-container { display: flex; justify-content:
+                    space-between; }
+                  </code>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12">
+          <!-- acodeon 2 -->
+
+          <div
+            class="accordion col-12 col-md-6 text-md-left align-self-md-center"
+            id="accordion2"
+          >
+            <h2 class="text-center">Usos Grid</h2>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse1"
+                  aria-expanded="false"
+                  aria-controls="collapse1"
+                >
+                  Diseño de página complejo:
+                </button>
+              </h2>
+              <div
+                id="collapse1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.page-container { display: grid; grid-template-columns: 1fr
+                    2fr 1fr; grid-template-rows: 100px 200px; grid-gap: 10px; }
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse2"
+                  aria-expanded="false"
+                  aria-controls="collapse2"
+                >
+                  Maquetación de una sección con múltiples elementos:
+                </button>
+              </h2>
+              <div
+                id="collapse2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.section-container { display: grid; grid-template-columns:
+                    repeat(3, 1fr); grid-gap: 20px; }
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse3"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
+                >
+                  Cuadrícula de productos en una tienda en línea:
+                </button>
+              </h2>
+              <div
+                id="collapse3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.product-grid { display: grid; grid-template-columns:
+                    repeat(auto-fill, minmax(150px, 1fr)); grid-gap: 10px; }
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  Presentación de información en una tabla:
+                </button>
+              </h2>
+              <div
+                id="collapse4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.table-container { display: grid; grid-template-columns:
+                    repeat(3, 1fr); grid-gap: 10px; }
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                  aria-expanded="false"
+                  aria-controls="collapse5"
+                >
+                  Diseño de una página con encabezado, contenido y pie de
+                  página:
+                </button>
+              </h2>
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >.page-layout { display: grid; grid-template-rows: auto 1fr
+                    auto; }
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p class="h5 text-center">
+        En resumen, Flexbox es excelente para diseños unidimensionales, como
+        alinear elementos en una fila o columna, mientras que Grid es más
+        adecuado para diseños bidimensionales, permitiendo crear estructuras
+        complejas de filas y columnas. La elección entre Flexbox y Grid
+        dependerá del diseño que necesites y si es un diseño más simple y lineal
+        (Flexbox) o más complejo y estructurado (Grid).
+      </p>
+      <p class="h4 font-italic text-center">-Andres Rojas A.</p>
+    </section>
+                  
+                   <div class="col-12">
             <br />
             <p>
               En resumen, Flexbox es un modelo de diseño CSS que se centra en la
@@ -148,7 +615,7 @@
       </div>
     </section>
 
-<!-- SECCION PROYECTOS -->
+<!-- SECCION PROYECTOS .5  -->
 <section class="proyectos py-4">
       <div class="container">
         <h1 class="display-4 font-weight-bold text-center pb-4">
@@ -272,9 +739,618 @@
 
           </div>
           <p>Es importante mencionar que estos son ejemplos simples para ilustrar el uso de Flexbox y Grid en la práctica. Puedes personalizar y expandir estos ejemplos según tus necesidades específicas de diseño web.</p>
-          <p>Andres Landinez</p>
+          
         </div>
 </section>
+
+    <!-- SECCION CONSEJOS Y TRUCOS .6 -->
+    <section class="consejos-y-trucos py-4">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold text-center pb-4">
+          Consejos y trucos
+        </h2>
+        <h3 class="display-5 text-center">Flexbox</h3>
+        <div class="row">
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Centrado fácil</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Centrar elementos vertical y horizontalmente es muy fácil con
+                  Flexbox: <code>justify-content: center</code> y
+                  <code>align-items: center</code>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <code> flex-wrap</code> para Multilínea
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Si quieres que los ítems pasen a la siguiente línea en vez de
+                  encogerse, usa <code>flex-wrap: wrap</code>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Ordenar ítems</h4>
+                <p class="card-text bg-white text-black p-2">
+                  La propiedad <code>order</code> es muy útil para cambiar el
+                  orden visual de los ítems sin cambiar el HTML.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">No Olvides el Eje Cruzado</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Es fácil enfocarse solo en el eje principal (horizontal en
+                  <code>row</code>, vertical en <code>column</code>), pero las
+                  propiedades que afectan el eje cruzado (como
+                  <code>align-items</code>) son igual de valiosas.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Uso de <code>flex: shorthand</code></h4>
+                <p class="card-text bg-white text-black p-2">
+                  En lugar de definir <code>flex-grow</code>,
+                  <code>flex-shrink</code>, y <code>flex-basis</code> por
+                  separado, utiliza la notación resumida para ahorrar tiempo y
+                  espacio.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Uso Estratégico de <code>flex-grow</code>,
+                  <code>flex-shrink</code>, y <code>flex-basis</code>
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Entender estas propiedades a fondo te permite controlar cómo
+                  tus ítems se adaptan a diferentes tamaños de contenedor. Por
+                  ejemplo, usar <code>flex-grow: 1</code> en todos los ítems les
+                  permite crecer uniformemente para llenar el espacio.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <h3 class="display-5 text-center mt-5">CSS Grid</h3>
+        <div class="row">
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Diseño con <code>grid-template-areas</code>
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Para diseños más complejos, define áreas en tu grid. Esto te
+                  permite visualizar fácilmente la estructura de tu diseño y
+                  mover áreas completas redefiniendo
+                  <code>grid-template-areas</code>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Espaciado con <code>gap</code></h4>
+                <p class="card-text bg-white text-black p-2">
+                  En lugar de utilizar márgenes, utiliza
+                  <code>gap</code> (anteriormente <code>grid-gap</code>) para
+                  espaciar uniformemente tus ítems en el grid.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Función <code>repeat()</code></h4>
+                <p class="card-text bg-white text-black p-2">
+                  Usa <code>repeat()</code> para definir múltiples columnas o
+                  filas del mismo tamaño. Ejemplo:<br /><code
+                    >grid-template-columns: repeat(3, 1fr)</code
+                  >.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Utiliza <code>fr</code> para distribución uniforme
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  La unidad <code>fr</code> es excelente para crear diseños que
+                  distribuyan espacio uniformemente entre ítems.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Grids anidados</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Anida un grid dentro de otro para lograr diseños más
+                  complejos. Por ejemplo, un ítem de grid puede convertirse en
+                  un contenedor de grid por sí mismo.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Uso de Líneas Nombradas</h4>
+                <p class="card-text bg-white text-black p-2">
+                  Nombrar líneas en tu grid puede hacer que tu CSS sea más
+                  legible y te permite reposicionar ítems con facilidad.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Función <code>minmax()</code> para responsividad
+                </h4>
+                <p class="card-text bg-white text-black p-2">
+                  Esta función es esencial para crear diseños adaptativos,
+                  permitiendo que las columnas y filas tengan dimensiones
+                  mínimas y máximas.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   <!--  punto 7  -->
+
+    <br />
+    <div class="container">
+      <table class="table">
+        <thead class="table-dark">
+          <tr class="text-center">
+            <th class="border border-dark">Flexbox</th>
+            <th class="border border-dark">Grid</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr>
+            <td class="border border-dark">
+              Buen nivel de compatibilidad en navegadores modernos, incluyendo
+              Chrome, Firefox, Safari, Edge y Opera.
+            </td>
+            <td class="border border-dark">
+              Grid Layout también tiene un buen nivel de compatibilidad en
+              navegadores modernos, incluyendo Chrome, Firefox, Safari, Edge y
+              Opera.
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-dark">
+              Versiones antiguas de navegadores ofrecen un buen soporte, por lo
+              que Flexbox se puede utilizar de manera confiable en versiones más
+              antiguasde los navegadores mencionados.
+            </td>
+            <td class="border border-dark">
+              CSS Grid es relativamente nuevo en comparación con Flexbox, pero
+              su adopcion ha sido rápida, por lo que la mayoria de las versiones
+              actualesde estos navegadores ofrecen un buen soporte.
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-dark">
+              Uso de prefijos de proveedores, en navegadores más antiguos, es
+              posible que debas utilizar propiedades con prefijos de
+              proveedores, como -webkit- para Chrome y Safari o -moz- para
+              Firefox.
+            </td>
+            <td class="border border-dark">
+              La compatibilidad de Grid en navegadoes antiguos , como Intenet
+              Explorer 11 y versiones anteriores, puede ser limitada y aumentar
+              el tiempo de desarrollo y el mantenimiento del sitio web.
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-dark">
+              Podemos usar polyfills como "Flexibility o "Flexie" para agregar
+              soporte en navegadores antiguos
+            </td>
+            <td class="border border-dark">
+              Para CSS grid, puede ser "Grid Polyfill" es una opción que agrega
+              soporte en navegores que no lo tienen.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+
+
+    <!-- SECCIÓN EJERCICIOS DE PRÁCTICA .9 -->
+    <section class="ejercicios-y-desafios py-4">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold text-center pb-4">
+          Ejercicios y desafíos
+        </h2>
+        <p class="text-center fs-3 text-body-secondary">
+          ¡Utiliza estos desafíos para mejorar con Flexbox y Grid!
+        </p>
+        <h3 class="display-5 text-center mt-5">Flexbox</h3>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Principiante</small><br />
+              Crea un contenedor con 3 cajas dentro que se distribuyan
+              horizontalmente y tengan el mismo espacio entre ellas.
+            </h4>
+            <div class="accordion" id="accordionFL1">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-1"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-1"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL1"
+              >
+                <div class="accordion-body">
+                  <code>justify-content: space-between;</code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea una barra de navegación con 5 links. El primer y último link
+              deben estar en los extremos opuestos de la barra.
+            </h4>
+            <div class="accordion" id="accordionFL2">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-2"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-2"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <code>justify-content: space-between;</code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea una galería de imágenes donde las imágenes se distribuyan en
+              2 líneas y estén centradas.
+            </h4>
+            <div class="accordion" id="accordionFL3">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-3"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-3"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >flex-wrap: wrap; <br />
+                    justify-content: center;</code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Avanzado</small><br />
+              Crea un diseño de tarjeta con imagen, título, texto y botón. La
+              imagen debe estar a la izquierda y el resto del contenido a la
+              derecha, alineado verticalmente.
+            </h4>
+            <div class="accordion" id="accordionFL4">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-flex-4"
+                  aria-expanded="false"
+                  aria-controls="respuesta-flex-4"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-flex-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFL2"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Utiliza <code>flex-direction: row;</code> y
+                    <code>align-items: center;</code> para el contenido.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <h3 class="display-5 text-center mt-5">Grid</h3>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Principiante</small><br />
+              Diseña una simple grilla de 3x3 cajas del mismo tamaño.
+            </h4>
+            <div class="accordion" id="accordionGr1">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-1"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-1"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr1"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-columns: repeat(3, 1fr);
+                    <br />grid-template-rows: repeat(3, 1fr);</code
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Crea un layout de artículo con imagen a la izquierda, título y
+              descripción a la derecha, y contenido debajo abarcando ambas
+              columnas.
+            </h4>
+            <div class="accordion" id="accordionGr2">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-2"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-2"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr2"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-areas: 'img title' 'img desc' 'content
+                    content';
+                  </code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Intermedio</small><br />
+              Diseña un encabezado de sitio web con un logo a la izquierda,
+              navegación en el centro y un botón a la derecha.
+            </h4>
+            <div class="accordion" id="accordionGr3">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-3"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-3"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr3"
+              >
+                <div class="accordion-body">
+                  <code>grid-template-areas: 'logo nav btn'; </code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+
+        <article class="card bg-light mt-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              <small class="text-secondary">Nivel: Avanzado</small><br />
+              Diseña una grilla responsiva que muestra 4 columnas en pantallas
+              grandes, 2 en medianas y 1 en pequeñas.
+            </h4>
+            <div class="accordion" id="accordionGr4">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#respuesta-grid-4"
+                  aria-expanded="false"
+                  aria-controls="respuesta-grid-4"
+                >
+                  Haz click aqui para ver la solución.
+                </button>
+              </h5>
+              <div
+                id="respuesta-grid-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionGr4"
+              >
+                <div class="accordion-body">
+                  <code
+                    >grid-template-columns: repeat(auto-fit, minmax(200px,
+                    1fr));
+                  </code>
+                </div>
+              </div>
+            </div>
+            <p class="card-text bg-white text-black p-2"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Punto 10 -->
+
+    <div class="container mb-4 col-6">
+      <h3 style="color: rgb(148, 73, 247)" class="text-center">
+        Ejemplos de paginas web que usan Flexbox y Grid
+      </h3>
+      <div class="list-group text-center">
+        <a
+          style="background: rgb(80, 86, 255)"
+          target="_blank"
+          href="https://www.awwwards.com/"
+          class="list-group-item list-group-item-action"
+          >Ejemplo 1
+        </a>
+        <a
+          target="_blank"
+          href="https://www.smashingmagazine.com/"
+          class="list-group-item list-group-item-action"
+          >Ejemplo 2</a
+        >
+        <a
+          target="_blank"
+          href="https://css-tricks.com/"
+          class="list-group-item list-group-item-action"
+          >Ejemplo 3</a
+        >
+        <a
+          target="_blank"
+          href="https://gridbyexample.com/"
+          class="list-group-item list-group-item-action"
+          >Ejemplo 4</a
+        >
+        <a
+          target="_blank"
+          href="https://www.bbc.com/sport"
+          class="list-group-item list-group-item-action"
+          >Ejemplo 5</a
+        >
+        <a
+          target="_blank"
+          href="https://www.shopify.com/co"
+          class="list-group-item list-group-item-action"
+          >Ejemplo 6</a
+        >
+      </div>
+    </div>
+
 
     <!-- SECCION PIE DE PÁGINA -->
     <footer class="pie-de-pagina text-center text-md-right bg-dark text-white">
@@ -292,14 +1368,16 @@
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+
       crossorigin="anonymous"
     ></script>
   </body>
