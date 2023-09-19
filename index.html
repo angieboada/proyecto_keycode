@@ -27,17 +27,16 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- ARCHIVOS CSS PERSONALIZADOS-->
-    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
-
-    <title>Proyecto KeyCode</title>
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    <title>Flexbox y Grid</title>
   </head>
   <body>
     <!-- SECCION NAVEGACIÓN -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-      <div class="container">
-            <a href="#" class="navbar-brand" >
-              <strong>Proyecto </strong>KeyCode
-            </a>
+        <div class="container">
+              <a href="#" class="navbar-brand" >
+                <strong>Flexbox y </strong>Grid
+              </a>
 
             <button type="button" class="navbar-toggler" data-toggle="collapse"
             data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
@@ -45,16 +44,18 @@
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse d-flex flex-row-reverse" id="menu-principal">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Inicio</a></li>
-                  <li class="nav-item"><a href="https://github.com/angieboada/proyecto_keycode/tree/develop" target="_blank" class="nav-link">Proyecto Git</a></li>
-              </ul>
-           </div>
-      </div>
-  </nav>
-    <!-- INTRODUCCIÓN -->
-<section class="quien-soy py-4 mt-5">
+              <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">¿Que es Flexbox y Grid?</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+
+ <!-- SECCION QUIEN SOY -->
+ <section class="quien-soy py-4 mt-5">
   <div class="container">
       <div class="row">
           <div class="col-12 col-md-6 text-center">
@@ -63,7 +64,7 @@
           </div>
           
           <div class="col-12 col-md-6 text-center text-md-left align-self-md-center">
-              <h1 class="display-4 font-weight-bold text-primary">Flexbox y Grid</h1>
+              <h1 class="display-4 font-weight-bold text-primary">¿Que es Flexbox y Grid?</h1>
               <p>Flexbox y Grid son dos técnicas de diseño web importantes que han revolucionado la forma en que creamos diseños web flexibles y responsivos.</p>
 
               <div class="row">
@@ -307,123 +308,9 @@ Simplifica la alineación y distribución de contenido en filas y columnas.
   </div>                   
 </section>
 
-    <!-- Sección punto 4 -->
-    <section class="quien-soy py-4 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 text-md-left align-self-md-center">
-            <h1 class="display-4 font-weight-bold text-primary">
-              ¿Que es Flexbox y Grid?
-            </h1>
-            <p>
-              Flexbox y Grid son dos modelos de diseño en CSS que permiten crear
-              diseños de páginas web complejos y flexibles. Aunque ambos tienen
-              como objetivo facilitar la maquetación de elementos en una página
-              web, tienen diferencias clave en términos de su estructura y cómo
-              se utilizan.
 
-            </p>
 
-            <div class="row">
-              <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                  <div class="card card-body">
-                    <ul class="list-unstyled">
-                      <li>
-                        <strong>1. Estructura:</strong>
-                        <ul>
-                          <li>
-                            <strong>Flexbox:</strong> Se centra en la distribución de elementos
-                            en una sola dirección, ya sea en filas (horizontal)
-                            o columnas (vertical). Es ideal para diseñar diseños
-                            flexibles y escalables en una sola dimensión.
-                          </li>
-                          <li>
-                            <strong>Grid:</strong> Permite crear diseños bidimensionales con
-                            filas y columnas, permitiendo un control más preciso
-                            sobre la posición y el tamaño de los elementos en la
-                            página
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>2. Dirección de diseño:</strong>
-                        <ul>
-                          <li>
-                            <strong>Flexbox:</strong> Ideal para diseños unidimensionales, donde
-                            los elementos se alinean en una fila o columna y se
-                            ajustan según sea necesario.
-                          </li>
-                          <li>
-                            <strong>Grid:</strong> Excelente para diseños bidimensionales, donde
-                            se pueden definir filas y columnas específicas para
-                            colocar elementos en una cuadrícula.
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>3. Control sobre los elementos:</strong>
-                        <ul>
-                          <li>
-                            <strong>Flexbox:</strong> Proporciona un control más simple y rápido
-                            sobre la alineación, distribución y reordenamiento
-                            de elementos en una fila o columna.
-                          </li>
-                          <li>
-                            <strong>Grid:</strong> Ofrece un control preciso y completo sobre la
-                            posición y el tamaño de los elementos en ambas
-                            direcciones (filas y columnas).
-                          </li>
-                        </ul>
-                      </li>
 
-                      <li>
-                       <strong>4. Escenarios de uso:</strong> 
-                        <ul>
-                          <li>
-                            <strong>Flexbox:</strong> Es ideal para elementos secundarios de un
-                            contenedor que necesitan ser distribuidos y
-                            alineados en una sola dirección, como barras de
-                            navegación, listas de elementos o formularios.
-                          </li>
-                          <li>
-                            <strong>Grid:</strong> Se utiliza cuando se necesita un diseño más
-                            complejo y estructurado para todo el diseño de la
-                            página, como la maquetación de páginas completas,
-                            secciones complejas y módulos de diseño.
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p>
-              <a
-                class="btn btn-primary"
-                data-toggle="collapse"
-
-                href="#multiCollapseExample2"
-                role="button"
-                aria-expanded="false"
-                aria-controls="multiCollapseExample1"
-                >Diferencias clave entre Flexbox y Grid:</a
-              >
-            </p>
-          </div>
-
-          <div class="col-12 col-md-6 text-center">
-            <img
-              src="img/Imagen 1.png"
-              alt="soy el desarrollador"
-              class="img-fluid mb-4 mb-md-0"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Ejemplos punto 4 -->
 
