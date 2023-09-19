@@ -72,7 +72,9 @@
             />
           </div>
 
-          <div class="col-12 col-md-6 text-center text-md-left align-self-md-center">
+          <div
+            class="col-12 col-md-6 text-center text-md-left align-self-md-center"
+          >
             <h1 class="display-4 font-weight-bold text-primary">¿Quién soy?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -116,7 +118,7 @@
           <div class="col-12">
             <img src="./img/flexbox.png" width="400" height="auto" />
             <p>
-              <br>
+              <br />
               Flexbox, o Flexible Box Layout, es un modelo de diseño en CSS que
               se utiliza para diseñar diseños más flexibles y eficientes en
               términos de alineación y distribución de elementos en un
@@ -210,7 +212,7 @@
           </div>
 
           <div class="col-12">
-            <br>
+            <br />
             <p>
               En resumen, Flexbox es un modelo de diseño CSS que se centra en la
               distribución y alineación de elementos flexibles dentro de un
@@ -233,42 +235,142 @@
         <h1 class="display-4 font-weight-bold text-center pb-4">
           Ejemplos Practicos de Flexbox y Grid
         </h1>
-        
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h5>Ejemplo de Flexbox</h5>
+              <p>
+                En este ejemplo, utilizaremos Flexbox para crear un diseño de
+                navegación simple con elementos de menú alineados
+                horizontalmente.
+              </p>
+                  <textarea class="area">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Flexbox</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        .item {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <ul class="menu">
+            <li class="item">Inicio</li>
+            <li class="item">Acerca de</li>
+            <li class="item">Servicios</li>
+            <li class="item">Contacto</li>
+        </ul>
+    </div>
+</body>
+</html>
+                  </textarea>
+                  <p>En este ejemplo, hemos creado una barra de navegación horizontal utilizando Flexbox. La propiedad display: flex en el contenedor principal (contenedor) establece un contenedor flexible. La propiedad justify-content: center alinea los elementos en el centro horizontal del contenedor.</p>
+            </div>
+            <div class="col">
+              <h5>Ejemplo de Grid</h5>
+              <p>En este ejemplo, utilizaremos Grid para crear un diseño de página con varias secciones.</p>
+              <br>
+              <textarea class="area">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "cabecera cabecera cabecera"
+                                 "izquierda contenido derecha";
+            gap: 20px;
+        }
+        .cabecera {
+            grid-area: cabecera;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .izquierda {
+            grid-area: izquierda;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .contenido {
+            grid-area: contenido;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .derecha {
+            grid-area: derecha;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="cabecera">
+            <h1>Encabezado</h1>
+        </header>
+        <aside class="izquierda">
+            <h2>Barra lateral izquierda</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+        <main class="contenido">
+            <h2>Contenido principal</h2>
+            <p>Contenido principal de la página.</p>
+        </main>
+        <aside class="derecha">
+            <h2>Barra lateral derecha</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+    </div>
+</body>
+</html>
+              </textarea>
+              <p>En este ejemplo, hemos creado un diseño de página utilizando Grid. El contenedor principal (contenedor) se divide en tres columnas y dos filas, y se utiliza grid-template-areas para especificar cómo se distribuyen las áreas en el diseño.</p>
+            </div>
+
+          </div>
+          <p>Es importante mencionar que estos son ejemplos simples para ilustrar el uso de Flexbox y Grid en la práctica. Puedes personalizar y expandir estos ejemplos según tus necesidades específicas de diseño web.</p>
+          <p>Andres Landinez</p>
+        </div>
+
         <div class="row text-md-center">
           <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
             <div class="card">
-              <img class="card-img-top h-100" src="img/proyecto1.png" alt="Proyecto 1" />
+              <img
+                class="card-img-top h-100"
+                src="img/proyecto1.png"
+                alt="Proyecto 1"
+              />
               <div class="card-body">
-                <h5 class="card-title">Diseñar una barra de navegación</h5>
-                <h6>Codigo HTML</h6>
-                <pre>
-
-                  <!DOCTYPE html>
-                  <html lang="es">
-                  <head>
-                      <meta charset="UTF-8">
-                      <title>Centrar con Flexbox</title>
-                      <style>
-                          .contenedor {
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                              height: 100vh;
-                          }
-                          .caja {
-                              width: 100px;
-                              height: 100px;
-                              background-color: coral;
-                          }
-                      </style>
-                  </head>
-                  <body>
-                      <div class="contenedor">
-                          <div class="caja"></div>
-                      </div>
-                  </body>
-                  </html>
-                </pre>
+                <h5 class="card-title">Ejemplo Flexbox</h5>
+                <p>
+                  En este ejemplo, utilizaremos Flexbox para crear un diseño de
+                  navegación simple con elementos de menú alineados
+                  horizontalmente.
+                </p>
                 <a href="#" class="btn btn-primary">Ver Proyecto</a>
               </div>
             </div>
@@ -282,40 +384,6 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Proyecto 2</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-              </div>
-            </div>
-          </article>
-          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-            <div class="card">
-              <img
-                class="card-img-top h-100"
-                src="img/proyecto3.png"
-                alt="Proyecto 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Proyecto 3</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-              </div>
-            </div>
-          </article>
-          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-            <div class="card">
-              <img
-                class="card-img-top h-100"
-                src="img/proyecto4.png"
-                alt="Proyecto 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Proyecto 4</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.

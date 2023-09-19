@@ -91,3 +91,7 @@ a:hover {
     transform: rotateY(0deg);
   }
 }
+
+.area{
+  width: 100%;
+}
