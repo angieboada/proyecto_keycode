@@ -11,9 +11,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/faviconA.ico" />
     <!-- Bootstrap CSS -->
     <link
+
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+
       crossorigin="anonymous"
     />
 
@@ -81,7 +83,104 @@
         </ul>
       </div>
     </nav>
+    
+    <!-- SECCION 2 -->
+    <section class="filosofia py-4 bg-primary text-center text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img src="./img/flexbox.png" width="400" height="auto" />
+            <p>
+              <br />
+              Flexbox, o Flexible Box Layout, es un modelo de diseño en CSS que
+              se utiliza para diseñar diseños más flexibles y eficientes en
+              términos de alineación y distribución de elementos en un
+              contenedor. Aquí tienes una descripción de los conceptos clave en
+              Flexbox:
+            </p>
+          </div>
 
+          <div row text-md-center>
+            <div class="boxesContainer">
+              <div class="cardBox">
+                <div class="cardd">
+                  <div class="front" class="row">
+                    <h3>Contenedor Flex (Flex Container)</h3>
+                    <p>
+                      El contenedor flex es el elemento principal que contiene
+                      un conjunto de elementos flexibles
+                    </p>
+                    <strong>&#x21bb;</strong>
+                  </div>
+                  <div class="back">
+                    <p>
+                      que se organizan y distribuyen dentro de él. Se establece
+                      como un elemento padre utilizando la propiedad display:
+                      flex; o display: inline-flex;.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardBox">
+                <div class="cardd">
+                  <div class="front">
+                    <h3>Elementos Flexibles (Flex Items)</h3>
+                    <p>
+                      Los elementos flexibles son los elementos hijos directos
+                      del contenedor flex que se distribuyen y
+                    </p>
+                    <strong>&#x21bb;</strong>
+                  </div>
+                  <div class="back">
+                    <p>
+                      ajustan dentro del contenedor. Cada elemento flexible
+                      puede tener su propio ancho, alto y margen, pero se ajusta
+                      dentro del contenedor flex según las reglas de Flexbox.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardBox">
+                <div class="cardd">
+                  <div class="front">
+                    <h3>Eje Principal <br />(Main Axis)</h3>
+                    <p>
+                      El eje principal es el principal eje de distribución en un
+                      contenedor flex.
+                    </p>
+                    <strong>&#x21bb;</strong>
+                  </div>
+                  <div class="back">
+                    <p>
+                      Cambias la dirección del eje principal estableciendo la
+                      propiedad flex-direction. Ejemplo, flex-direction: column;
+                      colocaría el eje principal de forma vertical, de arriba a
+                      abajo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardBox">
+                <div class="cardd">
+                  <div class="front">
+                    <h3>Eje Cruzado <br />(Cross Axis)</h3>
+                    <p>
+                      El eje cruzado es el eje perpendicular al eje principal
+                      dentro de un contenedor flex.
+                    </p>
+                    <strong>&#x21bb;</strong>
+                  </div>
+                  <div class="back">
+                    <p>
+                      Se utiliza para controlar la alineación vertical de los
+                      elementos flexibles dentro del contenedor.
+                    </p>
+                  </div>
+                  
+                  
     <!-- Sección punto 4 -->
     <section class="quien-soy py-4 mt-5">
       <div class="container">
@@ -340,6 +439,7 @@
               </div>
             </div>
           </div>
+
           <!-- acodeon 2 -->
 
           <div
@@ -496,6 +596,152 @@
       </p>
       <p class="h4 font-italic text-center">-Andres Rojas A.</p>
     </section>
+                  
+                   <div class="col-12">
+            <br />
+            <p>
+              En resumen, Flexbox es un modelo de diseño CSS que se centra en la
+              distribución y alineación de elementos flexibles dentro de un
+              contenedor flex. El contenedor flex define cómo se disponen los
+              elementos flexibles en el eje principal y cruzado, lo que permite
+              crear diseños flexibles y responsivos de manera eficiente. Los
+              conceptos de eje principal y cruzado son especialmente importantes
+              para comprender cómo se alinean y distribuyen los elementos en un
+              diseño Flexbox.
+            </p>
+            <p class="font-italic">Andres Landinez</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- SECCION PROYECTOS .5  -->
+<section class="proyectos py-4">
+      <div class="container">
+        <h1 class="display-4 font-weight-bold text-center pb-4">
+          Ejemplos Practicos de Flexbox y Grid
+        </h1>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h5>Ejemplo de Flexbox</h5>
+              <p>
+                En este ejemplo, utilizaremos Flexbox para crear un diseño de
+                navegación simple con elementos de menú alineados
+                horizontalmente.
+              </p>
+                  <textarea class="area">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Flexbox</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        .item {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <ul class="menu">
+            <li class="item">Inicio</li>
+            <li class="item">Acerca de</li>
+            <li class="item">Servicios</li>
+            <li class="item">Contacto</li>
+        </ul>
+    </div>
+</body>
+</html>
+                  </textarea>
+                  <p>En este ejemplo, hemos creado una barra de navegación horizontal utilizando Flexbox. La propiedad display: flex en el contenedor principal (contenedor) establece un contenedor flexible. La propiedad justify-content: center alinea los elementos en el centro horizontal del contenedor.</p>
+            </div>
+            <div class="col">
+              <h5>Ejemplo de Grid</h5>
+              <p>En este ejemplo, utilizaremos Grid para crear un diseño de página con varias secciones.</p>
+              <br>
+              <textarea class="area">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "cabecera cabecera cabecera"
+                                 "izquierda contenido derecha";
+            gap: 20px;
+        }
+        .cabecera {
+            grid-area: cabecera;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .izquierda {
+            grid-area: izquierda;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .contenido {
+            grid-area: contenido;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .derecha {
+            grid-area: derecha;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="cabecera">
+            <h1>Encabezado</h1>
+        </header>
+        <aside class="izquierda">
+            <h2>Barra lateral izquierda</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+        <main class="contenido">
+            <h2>Contenido principal</h2>
+            <p>Contenido principal de la página.</p>
+        </main>
+        <aside class="derecha">
+            <h2>Barra lateral derecha</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+    </div>
+</body>
+</html>
+              </textarea>
+              <p>En este ejemplo, hemos creado un diseño de página utilizando Grid. El contenedor principal (contenedor) se divide en tres columnas y dos filas, y se utiliza grid-template-areas para especificar cómo se distribuyen las áreas en el diseño.</p>
+            </div>
+
+          </div>
+          <p>Es importante mencionar que estos son ejemplos simples para ilustrar el uso de Flexbox y Grid en la práctica. Puedes personalizar y expandir estos ejemplos según tus necesidades específicas de diseño web.</p>
+          
+        </div>
+</section>
 
     <!-- SECCION CONSEJOS Y TRUCOS .6 -->
     <section class="consejos-y-trucos py-4">
@@ -1105,6 +1351,7 @@
       </div>
     </div>
 
+
     <!-- SECCION PIE DE PÁGINA -->
     <footer class="pie-de-pagina text-center text-md-right bg-dark text-white">
       <div class="container">
@@ -1130,6 +1377,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+
       crossorigin="anonymous"
     ></script>
   </body>
