@@ -115,7 +115,8 @@
         <div class="row">
           <div class="col-12">
             <img src="./img/flexbox.png" width="400" height="auto" />
-            <p class="h2">
+            <p>
+              <br>
               Flexbox, o Flexible Box Layout, es un modelo de diseño en CSS que
               se utiliza para diseñar diseños más flexibles y eficientes en
               términos de alineación y distribución de elementos en un
@@ -209,7 +210,8 @@
           </div>
 
           <div class="col-12">
-            <p class="h2">
+            <br>
+            <p>
               En resumen, Flexbox es un modelo de diseño CSS que se centra en la
               distribución y alineación de elementos flexibles dentro de un
               contenedor flex. El contenedor flex define cómo se disponen los
@@ -219,7 +221,7 @@
               para comprender cómo se alinean y distribuyen los elementos en un
               diseño Flexbox.
             </p>
-            <p class="h4 font-italic">Andres Landinez</p>
+            <p class="font-italic">Andres Landinez</p>
           </div>
         </div>
       </div>
@@ -229,22 +231,44 @@
     <section class="proyectos py-4">
       <div class="container">
         <h1 class="display-4 font-weight-bold text-center pb-4">
-          Mis Proyectos
+          Ejemplos Practicos de Flexbox y Grid
         </h1>
+        
         <div class="row text-md-center">
           <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
             <div class="card">
-              <img
-                class="card-img-top h-100"
-                src="img/proyecto1.png"
-                alt="Proyecto 1"
-              />
+              <img class="card-img-top h-100" src="img/proyecto1.png" alt="Proyecto 1" />
               <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h5 class="card-title">Diseñar una barra de navegación</h5>
+                <h6>Codigo HTML</h6>
+                <pre>
+
+                  <!DOCTYPE html>
+                  <html lang="es">
+                  <head>
+                      <meta charset="UTF-8">
+                      <title>Centrar con Flexbox</title>
+                      <style>
+                          .contenedor {
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              height: 100vh;
+                          }
+                          .caja {
+                              width: 100px;
+                              height: 100px;
+                              background-color: coral;
+                          }
+                      </style>
+                  </head>
+                  <body>
+                      <div class="contenedor">
+                          <div class="caja"></div>
+                      </div>
+                  </body>
+                  </html>
+                </pre>
                 <a href="#" class="btn btn-primary">Ver Proyecto</a>
               </div>
             </div>
