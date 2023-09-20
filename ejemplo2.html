@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+      <html lang="es">
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "cabecera cabecera cabecera"
+                                 "izquierda contenido derecha";
+            gap: 20px;
+        }
+        .cabecera {
+            grid-area: cabecera;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .izquierda {
+            grid-area: izquierda;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .contenido {
+            grid-area: contenido;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .derecha {
+            grid-area: derecha;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+    </style>
+    </head>
+  <body>
+    <div class="contenedor">
+        <header class="cabecera">
+            <h1>Encabezado</h1>
+        </header>
+        <aside class="izquierda">
+            <h2>Barra lateral izquierda</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+        <main class="contenido">
+            <h2>Contenido principal</h2>
+            <p>Contenido principal de la página.</p>
+        </main>
+        <aside class="derecha">
+            <h2>Barra lateral derecha</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+    </div>
+</body>
+</html>

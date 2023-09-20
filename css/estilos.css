@@ -1,0 +1,99 @@
+/* a:hover {
+    background: #f30909;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+  } */
+  
+  .cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+  .cardBox:hover .cardd {
+    transform: rotateY(180deg);
+  }
+  .cardd {
+    background: #0a5e83;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 2s ease 0s; /** Tiempo de Transicion*/
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 0.4rem;
+  }
+  .front, .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Tarjetas Parte trasera*/
+  .cardBox:nth-child(1) .cardd .back {
+    background: #0dcaf0;
+    border-radius: 0.4rem;
+  }
+  .cardBox:nth-child(2) .cardd .back {
+    background: orange;
+    border-radius: 0.4rem;
+  }
+  .cardBox:nth-child(3) .cardd .back {
+    background: yellowgreen;
+    border-radius: 0.4rem;
+  }
+  .cardBox:nth-child(4) .cardd .back {
+    background: tomato;
+    border-radius: 0.4rem;
+  }
+  
+  /* RETARDOS AL VOLTEAR CADA CARD */
+  .cardBox:nth-child(2) .cardd {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+  .cardBox:nth-child(3) .cardd {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+  .cardBox:nth-child(4) .cardd {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
+  
+  @keyframes giro {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  .area, iframe {
+    width: 100%;
+    text-align: left;
+    height: 25vh;
+  }
